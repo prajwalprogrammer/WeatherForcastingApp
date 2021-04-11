@@ -1,14 +1,16 @@
 {
   "expo": {
-    "name": "weatherforcast",
-    "slug": "weatherforcast",
+    "name": "Weather",
+    "slug": "Weather",
+    "owner":"Janhavi Achwale",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/weather-app.png",
+    "githubUrl":"https://github.com/janhavi425/WeatherForcasting",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/weather-app.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#37003c"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,9 +22,10 @@
       "supportsTablet": true
     },
     "android": {
+      "package":"com.Weather.Weather",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/weather-app.png",
+        "backgroundColor": "#37003c"
       }
     },
     "web": {

@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 //import { COLORS, FONTS, SIZES } from "../../Assets/theme";
-import { getWhether } from "./index1";
+import { getWhether,getWeather2 } from "./index1";
 import Nextday from "./Nextday";
-import { getWhether1 } from "./index3";
+import { getWhether1,getWhether4 } from "./index3";
 import { LinearGradient } from "expo-linear-gradient";
 import {
   ScrollView,
@@ -24,7 +24,9 @@ import { Card, Button } from "react-native-paper";
 import { Header, Left, Right, Title, Subtitle, Icon, Body } from "native-base";
 import * as Animatable from "react-native-animatable";
 import BottomSheet from "react-native-gesture-bottom-sheet";
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = ({route,navigation}) => {
+  const {currentLatitude} = route.params;
+  const {currentLongitude} = route.params;
   var months1 = [
     "January",
     "February",
@@ -41,7 +43,7 @@ const HomeScreen = ({ navigation }) => {
   ];
   const sh = Dimensions.get("window").height;
   const bottomSheet = useRef();
-  const [city, setcity] = useState("Latur");
+  const [city, setcity] = useState(" ");
   const [cities, setcities] = useState(" ");
   var date = new Date().getDate();
   var month = new Date().getMonth() + 1;
@@ -63,7 +65,7 @@ const HomeScreen = ({ navigation }) => {
   const [dailyData, setdailyData] = useState();
   useEffect(() => {
     const fetchAPI = async () => {
-      await setdailyData(await getWhether(city));
+      await setdailyData(await getWeather2(currentLatitude,currentLongitude));
     };
     fetchAPI();
     console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
@@ -87,12 +89,14 @@ const HomeScreen = ({ navigation }) => {
   const [dailyData1, setdailyData1] = useState();
   useEffect(() => {
     const fetchAPI1 = async () => {
-      await setdailyData1(await getWhether1(city));
+      await setdailyData1(await getWhether4(currentLatitude,currentLongitude));
     };
     fetchAPI1();
     console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
     console.log("vvvvvvvvvvvvvvvvvvvvvv");
   }, []);
+  console.log(currentLongitude)
+  console.log(currentLatitude)
 
   return (
     <>
@@ -350,6 +354,7 @@ const HomeScreen = ({ navigation }) => {
                 >
                   Today
                 </Text>
+               
                 <TouchableOpacity
                   onPress={() =>
                     navigation.navigate("Nextday", {
@@ -357,16 +362,21 @@ const HomeScreen = ({ navigation }) => {
                     })
                   }
                 >
+                 
                   <Text
                     style={{
                       paddingRight: 30,
                       paddingTop: 8,
                       fontWeight: "bold",
+                      fontSize:17,
+                      color:"#37003c",
+                      textDecorationLine: 'underline'
                     }}
                   >
                     {"Next 5 days >"}
                   </Text>
                 </TouchableOpacity>
+                
               </View>
 
               <View style={{ flex: 0.5 }}>
@@ -405,7 +415,7 @@ const HomeScreen = ({ navigation }) => {
                           {
                             converTime(
                               dailyData.list[0].dt_txt.split(" ")[1]
-                            )[1]
+                            ).substring(0,2)
                           }
                           {
                             converTime(
@@ -470,7 +480,7 @@ const HomeScreen = ({ navigation }) => {
                           {
                             converTime(
                               dailyData.list[1].dt_txt.split(" ")[1]
-                            )[1]
+                            ).substring(0,2)
                           }
                           {
                             converTime(
@@ -536,7 +546,7 @@ const HomeScreen = ({ navigation }) => {
                           {
                             converTime(
                               dailyData.list[2].dt_txt.split(" ")[1]
-                            )[1]
+                            ).substring(0,2)
                           }
                           {
                             converTime(
@@ -600,7 +610,7 @@ const HomeScreen = ({ navigation }) => {
                           {
                             converTime(
                               dailyData.list[3].dt_txt.split(" ")[1]
-                            )[1]
+                            ).substring(0,2)
                           }
                           {
                             converTime(
@@ -664,7 +674,7 @@ const HomeScreen = ({ navigation }) => {
                           {
                             converTime(
                               dailyData.list[4].dt_txt.split(" ")[1]
-                            )[1]
+                            ).substring(0,2)
                           }
                           {
                             converTime(
@@ -728,7 +738,7 @@ const HomeScreen = ({ navigation }) => {
                           {
                             converTime(
                               dailyData.list[5].dt_txt.split(" ")[1]
-                            )[1]
+                            ).substring(0,2)
                           }
                           {
                             converTime(

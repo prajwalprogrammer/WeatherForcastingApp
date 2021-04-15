@@ -36,3 +36,16 @@ export const getWhether= async(pro)=>{
 //   }).catch(err=>console.log(err.message))
  // console.log(Data.data)
 }
+export const getWeather2=async(pro1,pro2)=>{
+  try {
+   
+    const {data}=await axios.get(`http://api.openweathermap.org/data/2.5/forecast?lat=${pro1}&lon=${pro2}&appid=e34d92e189fc02f803fea1c7f452dee2`)
+  // alert(data)
+    return data;
+    
+  } catch (error) {
+   // alert("City Not Found")
+    return null; 
+   // alert(error.message)
+  }
+}

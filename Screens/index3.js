@@ -35,3 +35,14 @@ export const getWhether1= async(Pro)=>{
 //   }).catch(err=>console.log(err.message))
  // console.log(Data.data)
 }
+
+export const getWhether4= async(Pro1,pro2)=>{
+ 
+  try {
+    const {data}=await axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${Pro1}&lon=${pro2}&appid=e34d92e189fc02f803fea1c7f452dee2`);
+    return data;
+
+  } catch (error) {
+    return null;
+  }
+}

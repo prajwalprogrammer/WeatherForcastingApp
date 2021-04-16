@@ -24,6 +24,8 @@ import { Card, Button } from "react-native-paper";
 import { Header, Left, Right, Title, Subtitle, Icon, Body } from "native-base";
 import * as Animatable from "react-native-animatable";
 import BottomSheet from "react-native-gesture-bottom-sheet";
+import { MaterialCommunityIcons } from '@expo/vector-icons'; 
+
 const HomeScreen = ({route,navigation}) => {
   const {currentLatitude} = route.params;
   const {currentLongitude} = route.params;
@@ -120,11 +122,12 @@ const HomeScreen = ({route,navigation}) => {
               barStyle="light-content"
             >
               <Left>
-                <Icon name="grid" style={{ color: "black" }} />
+                {/* <Icon name="grid" style={{ color: "black" }} /> */}
+                <MaterialCommunityIcons name="weather-sunset" size={34} color="black" />
               </Left>
               <Body>
                 <Title
-                  style={{ fontSize: 20, fontWeight: "bold", color: "black" }}
+                  style={{ fontSize: 23, fontWeight: "bold", color: "black" }}
                 >
                   Weather Forcast
                 </Title>

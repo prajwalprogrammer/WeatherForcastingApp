@@ -42,6 +42,10 @@ Snack lets you run complete Expo project in the browser. No download required
 here is the link of snack
 https://snack.expo.io/@prajwalprogrammer/github.com-janhavi425-weatherforcasting
 
+## APK file:
+***
+Download this app via this link:
+
 
 
 <a name="Screenshots"></a>

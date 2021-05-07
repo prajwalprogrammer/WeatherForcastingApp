@@ -50,10 +50,13 @@ Download this app via this link:
 
 <a name="Screenshots"></a>
 ### SCREENSHOT
+![Weather 1](https://user-images.githubusercontent.com/76836929/117404542-bdeddd80-af27-11eb-90b7-cb6b8d146a62.jpeg)
+![weather 2](https://user-images.githubusercontent.com/76836929/117404548-c0503780-af27-11eb-9fb8-a60d0386e4ac.jpeg)
+![weather 3](https://user-images.githubusercontent.com/76836929/117404554-c2b29180-af27-11eb-9530-a39d0e4e87aa.jpeg)
+![weather 5](https://user-images.githubusercontent.com/76836929/117404574-c8a87280-af27-11eb-8a00-bf330095a9f0.jpeg)
+![weather 6](https://user-images.githubusercontent.com/76836929/117404580-cb0acc80-af27-11eb-9d3c-0304e4e262b0.jpeg)
+![weather 7](https://user-images.githubusercontent.com/76836929/117404601-d1994400-af27-11eb-9d1e-4c2d32776033.jpeg)
+![weather 8](https://user-images.githubusercontent.com/76836929/117404605-d52ccb00-af27-11eb-9e94-1a693ecdbafe.jpeg)
 
-![Quiz 1](https://user-images.githubusercontent.com/76836929/116201782-8331bb80-a757-11eb-90be-19656502ff70.jpeg)
 
-![quiz 2](https://user-images.githubusercontent.com/76836929/116201794-86c54280-a757-11eb-8fdc-0ce3d94f1160.jpeg)
-
-![quiz 3](https://user-images.githubusercontent.com/76836929/116201831-8fb61400-a757-11eb-92c0-c6cb4abb1a05.jpeg)
 

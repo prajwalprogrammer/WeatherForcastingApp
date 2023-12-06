@@ -37,6 +37,7 @@ If you need more calls per minute, increased up time, more frequent weather upda
 ## APK file:
 ***
 Download this app via this link:
+https://drive.google.com/file/d/1kNVAAuOonpNNpP2FelC10UGugxmbFkLT/view?usp=sharing_eil_m&ts=656f29c3
 
 
 

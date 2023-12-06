@@ -34,17 +34,10 @@ The Weather-Forecast uses the OpenWeatherMap API to get the current weather. Ope
 
 If you need more calls per minute, increased up time, more frequent weather updates, or secured access, you’ll need to pay subscription. Regardless of which tier you decide to use, you need to register an API key for your application. To do this, register your application by signing up for an account. Once logged in, you can find the key under the setup tab. Since the API is public access, the key needs to be added as a parameter to whatever API endpoint you send a request to.
 
-<a name="Expo_snack"></a>
-## Expo Snack
-***
-Expo in the browser
-Snack lets you run complete Expo project in the browser. No download required
-here is the link of snack
-https://snack.expo.io/@prajwalprogrammer/github.com-janhavi425-weatherforcasting
-
 ## APK file:
 ***
 Download this app via this link:
+
 
 
 
